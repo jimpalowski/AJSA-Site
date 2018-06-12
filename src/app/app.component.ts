@@ -9,7 +9,11 @@ import { Post } from './models/post.model';
 
 export class AppComponent {
   currentPost: string = 'Angry Show'
-  posting: Post[] = [
+  masterPost: Post[] = [
     new Post('Blog', 'Checkout my new angry review'),
   ];
+
+  addPost(){
+
+  }
 }

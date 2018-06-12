@@ -1,3 +1,5 @@
-<p>
-  posts works!
-</p>
+
+  <p *ngFor="let currentPost of childPost">{{currentPost.title}} {{currentPost.description}}
+    <input *ngIf="currentTask.done === true" type="checkbox" checked (click)="toggleDone(currentTask, false)"/>
+    <input *ngIf="currentTask.done === false" type="checkbox" (click)="toggleDone(currentTask, true)"/>
+    <button (click)="editButtonClicked(currentTask)">Edit!</button>

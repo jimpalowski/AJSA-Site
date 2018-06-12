@@ -1,4 +1,4 @@
 export class Post {
-    constructor(public description: string, public priority: number){ }
+    constructor(public title: string, public description: string){ }
   }
   
